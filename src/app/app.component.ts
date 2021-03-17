@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransactionService } from '../services/transaction.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular11Demo';
+  transactions:any;
+  constructor(public infotrans:TransactionService){
+    console.log('infotrans...',infotrans);
+    infotrans.getTransactions().subscribe(data =>{
+      this.transactions = data.data;
+      console.log('transactions--->',this.transactions)
+    })
+  }
+
 }
