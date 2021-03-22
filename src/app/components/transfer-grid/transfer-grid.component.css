@@ -1,0 +1,133 @@
+.mainHeader{
+    background-color: #258397;
+    height: 35px;
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Kanit', sans-serif;
+}
+.iconGrid{
+    background: #258397 url('../../../assets/icons/briefcase.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    height: 22px;
+    width: 22px;
+    margin-top: 7px;
+    margin-left: 16px;
+    position: fixed;
+}
+
+.lblTitle{
+    vertical-align: sub;
+}
+
+.mainBody{
+ width: 100%;
+ height: 93%;
+ background-color: whitesmoke;
+ font-family: 'Kanit', sans-serif;
+}
+
+.gridHeader{
+    height: 15%;
+}
+
+.searchTxt{
+    position: relative;    
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color:rgb(156, 160, 163);
+    border-bottom-width: 1px;
+    width: 35%;
+    top:10px;
+    left:5px;
+}
+
+.sortBy{
+ position: relative;
+ vertical-align: sub;
+ top:10px;
+ left:20px;
+}
+
+.sortBox{
+    width: 45%;
+    height: 30px;
+    display: inline-flex;
+    margin-left: 50px;
+    position: relative;
+    top:15px;
+}
+
+.sortType{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    width: 33%;
+    font-size: smaller;
+    text-align: center;
+    border-style: solid;
+    border-color: slategrey;
+    border-width: 0.1px;
+    margin-top: 5px;
+
+}
+
+.gridDetail{
+    height: 50px;
+    width: 95%;
+    border-style: solid;
+    border-color: slategrey;
+    border-width: 0.1px;
+    margin-left: 12px;
+    display:flex;
+}
+
+.gridTable{
+    overflow: auto;
+    height: 84%;
+}
+
+.divColor{
+    width: 10px;
+    height: 100%;
+}
+.divDate{
+    position: relative;
+    left: 15px;
+    top:15px;
+}
+.divIcon{
+    position: relative;
+    left: 15%;
+    top: 10px;
+    width: 45px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.divText{
+    position: relative;
+    left: 20%;
+    top:4px;
+    width: 65%;
+}
+
+.descTitle{
+    font-size:medium;
+    font-stretch: condensed;
+    font-weight: bolder;
+}
+
+.descTxt{
+    font-size:smaller;
+}
+.divAmnt{
+    font-size:medium;
+    font-stretch: condensed;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 10px;
+}

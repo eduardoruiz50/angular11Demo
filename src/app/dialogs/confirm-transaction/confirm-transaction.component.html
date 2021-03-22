@@ -1,0 +1,10 @@
+<div class="headerModal"></div>
+<div mat-dialog-content class="lblStyle">
+ <label class="titleLbl">confirm transaction:</label> <br>
+ <br><label class="messageLbl">To Account: {{data.merchant.name}} // {{data.transaction.type}}</label><br>
+ <label class="messageLbl">Ammount: {{data.transaction.amountCurrency.amount}}  </label>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button class="confirmedBtn" [mat-dialog-close]="data.merchant.name" cdkFocusInitial>Yes ,Confirmed!</button>
+</div>

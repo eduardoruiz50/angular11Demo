@@ -1,0 +1,31 @@
+<div class="formHeader">
+   <div class="iconForm"></div> <label class="lblTitle">Make a Transfer</label>
+</div>
+<div class="formBody">
+    <form [formGroup]="formTransaction">
+        <div class="divForm fromDiv">
+            <label class="formLbl" for="fromAcc">FROM ACCOUNT</label><br>
+            <input class="formTxbx" type="text" placeholder="Free Checking(4692) - ${{ammount}}" readonly><br>
+        </div>
+        <div class="divForm toDiv">
+            <label class="formLbl" for="toAcc">TO ACCOUNT</label><br>
+            
+            <input class="formTxbx" type="text" formControlName="nameTo"><br>
+        </div>
+        <div class="divForm ammountDiv">
+            <label class="formLbl" for="toAcc">AMMOUNT</label><br>
+            <input class="formTxbx" type="number" formControlName="ammountTo" 
+            placeholder="$ 0.00"><br>
+        </div>
+        <div *ngIf="getControl.nameTo.invalid" class="textDanger">
+            <div *ngIf="getControl.nameTo.errors.required">Name is required.</div>
+            <div *ngIf="getControl.ammountTo.errors.required">Ammount is required.</div>
+            <div *ngIf="this.ammount < -500">sobregidado</div>
+        </div>
+        <div class="divForm btnDiv">
+            <input class="btnSubmit" type="button" (click)="openDialog()" value="SUBMIT">
+        </div>
+        
+    </form>
+</div>
+

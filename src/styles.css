@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300&display=swap');
+
+body { margin:0; /* This is used to reset any browser-default margins */ }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,85 @@
+
+.formHeader{
+    background-color: #258397;
+    height: 35px;
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.formBody{
+ background-color: whitesmoke;
+ font-family: 'Kanit', sans-serif;
+}
+
+.lblTitle{
+    vertical-align: sub;
+}
+
+.divForm{
+    height: 60px;
+    width: 90%;
+    text-align: left;
+    padding-top:20px;
+    padding-left: 20px;
+}
+.fromDiv{
+    top: 20px;
+}
+.toDiv{
+    top: 10px;
+}
+
+.formLbl{
+    position: relative;
+   
+}
+
+.btnDiv{
+    text-align: right;
+}
+
+.formTxbx{
+    position: relative;    
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom-color:rgb(156, 160, 163);
+    border-bottom-width: 1px;
+    top: 5px;
+    width: 90%;
+}
+.formTxbx:focus{
+    outline: transparent;
+}
+
+.btnSubmit{
+    margin-top: 5px;
+    margin-right: 19px;
+    width: 13vw;
+    height: 6vh;
+    background-color: #EE7033;
+    color: whitesmoke;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 6px;
+    border-style: hidden;
+}
+
+.iconForm{
+    background: #258397 url('../../../assets/icons/arrows.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: unset;
+    height: 22px;
+    width: 22px;
+    margin-top: 7px;
+    margin-left: 16px;
+    position: fixed;
+
+}
+.textDanger{
+    color: crimson;
+    font-style:italic;
+    font-weight: 500;
+    margin-left: 20px;
+}

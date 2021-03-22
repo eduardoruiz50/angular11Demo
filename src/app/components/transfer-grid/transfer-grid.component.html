@@ -1,0 +1,25 @@
+<div class="mainHeader">
+    <div class="iconGrid"></div> <label class="lblTitle">Recent Transactions</label>
+</div>
+<div class="mainBody">
+    <div class="gridHeader">
+        <input class="searchTxt"  [(ngModel)]="searchText"  id="listSearch"  placeholder="search by typing..." autofocus>
+        <label class="sortBy"> Sort by</label>
+        <div class="sortBox">
+            <div class="sortType" (click)="sortGrid('date')">DATE</div>
+            <div class="sortType" (click)="sortGrid('beneficiary')">BENEFICIARY</div>
+            <div class="sortType" (click)="sortGrid('ammount')">AMMOUNT</div>
+        </div>
+    </div>
+
+    <div class="gridTable">
+        <div class="gridDetail" *ngFor="let item of (transactions | appFilter: searchText : 'merchant' : 'name') " >
+            <div class="divColor" [ngStyle]="{'background-color':item.categoryCode}"></div>
+            <div class="divDate">{{parseDate(item.dates.valueDate)}}</div>
+            <div class="divIcon" [ngStyle]="{'background-image': 'url(' + getIcon(item.merchant.name) + ')'}"></div>
+            <div class="divText"><label class="descTitle">{{item.merchant.name}}</label><br><label class="descTxt">{{item.transaction.type}}</label></div>
+            <div class="divAmnt">-${{item.transaction.amountCurrency.amount}}</div>
+        </div>
+    </div>
+    
+</div>
